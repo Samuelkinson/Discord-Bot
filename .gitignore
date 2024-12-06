@@ -1,0 +1,9 @@
+node_modules
+.env
+config.json
+**/build/
+batch.json
+backupbatch.json
+batch_dev.json
+Guilds.batchconfigs.json
+ProductData.xlsx

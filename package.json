@@ -1,0 +1,28 @@
+{
+  "name": "rsd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "del /s /q build",
+    "build": "tsc --build",
+    "start": "npm run clean && npm run build && node build/index.js --resolveJsonModule",
+    "startNoClean": "npm run build && node build/index.js",
+    "devStart": "npm run clean && npm run build && node build/index.js --development --resolveJsonModule",
+    "devStartNoClean": "npm run build && node build/index.js --development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/ms": "^0.7.34",
+    "currency-exchanger-js": "^1.0.4",
+    "discord.js": "^14.14.1",
+    "exceljs": "^4.4.0",
+    "fs": "^0.0.1-security",
+    "glob": "^10.3.12",
+    "mongoose": "^8.3.2",
+    "ms": "^2.1.3",
+    "translate-google": "^1.5.0"
+  }
+}
